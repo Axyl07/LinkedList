@@ -9,7 +9,11 @@
       while (temp.nextNode != null) temp = temp.nextNode;
       const newNode = new Node(value, null);
       temp.nextNode = newNode;
-}
+  }
+     prepend(value) {
+         const newNode = new Node(value, this.head.nextNode);
+         this.head.nextNode = newNode;
+     }
 }
 
 
