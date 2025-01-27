@@ -17,22 +17,23 @@
              this.head = newNode;
          }
      }
-    //  prepend(value) {
-    //      const newNode = new Node(value, this.head.nextNode);
-    //      this.head.nextNode = newNode;
-    //  }
-    //  size() {
-    //      let length = 0;
-    //      let temp = this.head;
-    //      while (temp.nextNode != null) {
-    //          length++;
-    //          temp = temp.nextNode;
-    //      }
-    //      return length;
-    //  }
-    //  Head() {
-    //      return this.head.nextNode;
-    //  }
+ 
+     size() {
+     if (this.head === null) {
+         return 0;
+     } else {
+         let length = 1
+         let temp = this.head;
+         while (temp.nextNode != null) {
+             length++;
+             temp = temp.nextNode;
+         }
+         return length;
+     }
+     }
+     Head() {
+         return this.head;
+     }
 }
 
 

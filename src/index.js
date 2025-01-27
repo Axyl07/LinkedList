@@ -10,6 +10,6 @@ list.prepend("dinosaur");
 list.prepend("dinosaur0");
 list.append("panda")
 console.log(list);
-// console.log(list.size());
-// console.log(list.Head())
+console.log(list.size());
+console.log(list.Head())
 console.log(list.toString());
