@@ -14,6 +14,15 @@
          const newNode = new Node(value, this.head.nextNode);
          this.head.nextNode = newNode;
      }
+     size() {
+         let length = 0;
+         let temp = this.head;
+         while (temp.nextNode != null) {
+             length++;
+             temp = temp.nextNode;
+         }
+         return length;
+     }
 }
 
 
